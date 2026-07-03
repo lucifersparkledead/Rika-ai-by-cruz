@@ -1,0 +1,34 @@
+{
+  "name": "Nyra AI Chatbot",
+  "description": "A sweet, warm and lovely AI chatbot for Telegram built with aiogram and Gemini. Supports English, Tamlish, Hindi, Russian, and Colombian Spanish.",
+  "repository": "https://github.com/your-username/Nyra_Chatbot",
+  "keywords": ["telegram", "bot", "aiogram", "gemini", "python", "chatbot", "multilingual"],
+  "image": "heroku/python",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from BotFather.",
+      "required": true
+    },
+    "GEMINI_API_KEY": {
+      "description": "Your Google Gemini API Key.",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "Your MongoDB connection URI.",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID (numeric).",
+      "required": true
+    },
+    "LOG_CHAT_ID": {
+      "description": "The chat ID where bot logs will be sent.",
+      "required": true
+    }
+  }
+}
